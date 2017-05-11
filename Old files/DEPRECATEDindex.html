@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>IDCP</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!--<link href="css/simple-sidebar.css" rel="stylesheet">-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/banner.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    
+    <img src='placeholder.png' style="visibility: hidden;" id="banner">
+	<!--Navigation Bars-->
+    <div id="wrapper">
+        <!--<img src="IDCPorig.png" id="banner">-->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <img src="IDCPlogo.PNG" id="banner">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="user_settings.php"><i class="fa fa-fw fa-user"></i> User Settings</a>
+                        </li>
+                        <li>
+                            <a href="idcp_settings.php"><i class="fa fa-fw fa-gear"></i> IDCP Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav" style="margin-top:7%;">
+                    <li>
+                        <a href="student.php">Students</a>
+                    </li>
+                    <li>
+                        <a href="#">Programs</a>
+                    </li>
+                    <li>
+                        <a href="certificate.php">Certificates</a>
+                    </li>
+                    <li>
+                        <a href="course.php">Courses</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="generate_report.php">Generate a Report</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <h1>Welcome</h1>
+                </div>
+                <br>
+                <div class = "butspan" style = "width: 300px;">
+                    <button type="button" class="btn btn-primary btn-block" style = "margin-right: 50px; height: 50px;" onclick="location.href='student.php';">Students</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-block" style = "margin-right: 50px; height: 50px;" onclick="location.href='student.php';">Programs</button>
+                    <button type="button" class="btn btn-primary btn-block" style = "margin-right: 50px; height: 50px;" onclick="location.href='certificate.php';">Certificates</button>
+                    <button type="button" class="btn btn-primary btn-block" style = "margin-right: 50px; height: 50px;" onclick="location.href='course.php';">Courses</button>
+                    <hr>
+                    <button type="button" class="btn btn-primary btn-block" style = "margin-right: 50px; height: 50px;" onclick="location.href='generate_report.php';">Generate a Report</button>
+                </div>
+                
+            </div>
+        <!-- /#page-content-wrapper -->
+        </div>
+		    
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
